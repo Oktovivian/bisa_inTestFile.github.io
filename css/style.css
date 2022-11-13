@@ -16,6 +16,12 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
+c{
+    color: #fff;
+    text-decoration: none!important;
+    opacity: 1
+
+}
 
 body {
     color: #000;
@@ -164,15 +170,23 @@ button:focus{
 
 .top-navbar .navbar{
 	padding: 15px 0px;
-	position: fixed;
+	position: relative;
+    display: flex;
 	width: 100%;
 	border-radius: 0px 0px 0px 0px;
-    color: #000;
+    color: #fff;
 	transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
-	-webkit-transform: translate3d(0, 0, 0);
+    filter: alpha(opacity=0.0);
+    -moz-opacity: 0.0;
+    -khtml-opacity: 0.0;
+    background: rgba(0, 0, 0, 0.0);
+    opacity: 1.0;	
+    -webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
+    
 	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    
 	z-index: 100;
 }
 
@@ -185,18 +199,17 @@ button:focus{
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
-	background: #0EB29A;
-	color:#ffffff;
+    background: #0EB29A;
+	color: #ffffff;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
 	background: #0EB29A;
 	color: #ffffff;
-	border-radius: 4px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
 	border: none;
-	border-radius: 0px;
+	border-radius: 25px;
 	padding: 10px;
 	box-shadow: 2px 5px 6px rgba(0,0,0,0.5);
 }
@@ -210,6 +223,7 @@ button:focus{
 	color: #ffffff;
 }
 .navbar-light .navbar-toggler:hover{
+    border-radius: 25%;
 	background: #0EB29A;
 }
 
@@ -1366,7 +1380,6 @@ blockquote {
     transition: opacity 0.2s ease-out;
 	font-size: 30px;
 }
-
 
 
 
